@@ -39,11 +39,30 @@ body {
     padding: 3px;
 }
 #dentro_menu {
+    display: none;
     position: absolute;
     background-image: linear-gradient(0deg, var(--cor),var(--cor1));
+    text-align: center;
+    height: 200px;
+    width: 80px;
     right: 5px;
     top: 65px;
     border: 1px solid azure;
     border-radius: 10px;
     padding: 3px;
+}
+#dentro_menu > * {
+    padding: 2px 3px;
+    margin-top: 20px;
+    border: 1px solid rgba(240, 255, 255, 0.164);
+    border-radius: 5px;
+}
+#dentro_menu > *:hover {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.164), rgba(117, 117, 117, 0.295));
+    font-weight: bold;
+}
+#dentro_menu a {
+    color: azure;
+    text-decoration: none;
+    
 }
