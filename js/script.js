@@ -13,7 +13,6 @@ var div_mov = document.querySelector("#mov_about_me").style
 window.addEventListener("scroll",function() {
     var limite = this.document.getElementById("about_me").getBoundingClientRect().top
     var acrescimo = window.innerHeight - 568
-    document.getElementById("about_me").style.height = 700 + acrescimo/2 + "px"
     if (window.scrollY >= limite && window.scrollY < limite + 275) {
         div_mov.top = "30%"
         div_mov.position = "fixed"
