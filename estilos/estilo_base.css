@@ -126,6 +126,8 @@ button {
 #recipiente {
     position: absolute;
     bottom: 20px;
+    width: 84%;
+    margin: 0 7% 0 9%;
 }
 
 /* habilidades */
