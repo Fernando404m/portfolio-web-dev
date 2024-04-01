@@ -28,7 +28,7 @@ window.addEventListener("scroll",function() {
         div_mov.display = "block"
         div_mov.right = "8%"
     }else if (window.scrollY >= limite + 600) {
-        div_mov.top = 290 + acrescimo/3 + "px"
+        div_mov.top = 288 + acrescimo/3 + "px"
         div_mov.position = "absolute"
         div_mov.display = "block"
         div_mov.right = "8%"
