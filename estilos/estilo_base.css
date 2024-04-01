@@ -92,10 +92,10 @@ button {
 }
 #nome {
     text-align: center;
-    width: 80vw;
+    width: 90vw;
     font-size: 1.3em;
     margin: auto;
-    padding: 10px;
+    padding: 10px 0;
 }
 #foto {
     display: block;
