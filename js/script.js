@@ -7,6 +7,7 @@ function menu() {
         dentro_menu.style.display = "block"
     }
 }
+
 // animação do sobre mim
 var div_mov = document.querySelector("#mov_about_me").style
 window.addEventListener("scroll",function() {
