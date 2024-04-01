@@ -12,7 +12,11 @@ function menu() {
 var div_mov = document.querySelector("#mov_about_me").style
 window.addEventListener("scroll",function() {
     var limite = this.document.getElementById("about_me").getBoundingClientRect().top
+    //acrescimo para mediar o tamanho da tela
     var acrescimo = window.innerHeight - 568
+
+    //quando chegar ate uma parte iniciar a se mover
+    
     if (window.scrollY >= limite && window.scrollY < limite + 275) {
         div_mov.top = "30%"
         div_mov.position = "fixed"
