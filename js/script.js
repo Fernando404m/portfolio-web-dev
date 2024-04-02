@@ -19,14 +19,14 @@ window.addEventListener("scroll",function() {
         div_mov.position = "fixed"
         div_mov.display = "block"
         div_mov.right = (window.scrollY - limite) * (window.innerWidth/310) -  (window.innerWidth/100*80) + "px"
-    }else if (window.scrollY >= limite + 275 && window.scrollY < limite + 600) {
+    }else if (window.scrollY >= limite + 275 && window.scrollY < limite + 1000) {
         div_mov.top = "30%"
         div_mov.position = "fixed"
         div_mov.display = "block"
         div_mov.right = "8%"
-    }else if (window.scrollY >= limite + 600) {
+    }else if (window.scrollY >= limite + 1000) {
         var acrescimo = window.innerHeight - 568
-        div_mov.top = 275 + acrescimo/3 + "px"
+        div_mov.top = 475 + acrescimo/3 + "px"
         div_mov.position = "absolute"
         div_mov.display = "block"
         div_mov.right = "8%"
