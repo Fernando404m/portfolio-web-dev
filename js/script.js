@@ -35,3 +35,15 @@ window.addEventListener("scroll",function() {
         div_mov.display = "none"
     }
 })
+
+
+//mostrar habilidades
+function mostra(hab) {
+    document.getElementById("html_on").style.display = "none"
+    document.getElementById("css_on").style.display = "none"
+    document.getElementById("javascript_on").style.display = "none"
+    document.getElementById("ingles_on").style.display = "none"
+    var mostrar = document.getElementById(hab)
+    document.getElementById(hab + "_on").style.display = "block"
+    
+}
