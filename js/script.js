@@ -8,13 +8,13 @@ function menu() {
     }
 }
 
+
 // animação do sobre mim
 var div_mov = document.querySelector("#mov_about_me").style
 window.addEventListener("scroll",function() {
     var limite = this.document.getElementById("about_me").getBoundingClientRect().top
 
     //quando chegar ate o "limite" começar a se mover
-    
     if (window.scrollY >= limite && window.scrollY < limite + 275) {
         div_mov.top = "30%"
         div_mov.position = "fixed"
