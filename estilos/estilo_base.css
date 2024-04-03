@@ -12,6 +12,7 @@
 }
 
 * {
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
 }
@@ -181,9 +182,9 @@ button {
 #ingles {}
 
 .display_hab {
-    
+    display: none;
     position: absolute;
-    background-color: black;
+    background-color: var(--trancor);
     height: 250px;
     right: 8%;
     bottom: 10%;
@@ -191,4 +192,5 @@ button {
     padding: 5px;
     border: 1px solid azure;
     border-radius: 10px;
+    animation: normal 1s ease;
 }

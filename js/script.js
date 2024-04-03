@@ -14,7 +14,7 @@ var div_mov = document.querySelector("#mov_about_me").style
 window.addEventListener("scroll",function() {
     var limite = this.document.getElementById("about_me").getBoundingClientRect().top
 
-    //quando chegar ate o "limite" começar a se mover
+    // quando chegar ate o "limite" começar a se mover
     if (window.scrollY >= limite && window.scrollY < limite + 275) {
         div_mov.top = "30%"
         div_mov.position = "fixed"
@@ -37,13 +37,44 @@ window.addEventListener("scroll",function() {
 })
 
 
-//mostrar habilidades
+// mostrar habilidades
+var hab_ant = []
 function mostra(hab) {
-    document.getElementById("html_on").style.display = "none"
-    document.getElementById("css_on").style.display = "none"
-    document.getElementById("javascript_on").style.display = "none"
-    document.getElementById("ingles_on").style.display = "none"
-    var mostrar = document.getElementById(hab)
-    document.getElementById(hab + "_on").style.display = "block"
-    
+    if (hab_ant.length < 2) {
+    hab_ant.push(hab)
+    }else {
+        hab_ant.shift()
+        hab_ant.push(hab)
+    }
+    if (hab_ant[0] != hab_ant[1] || hab_ant.length == 0) {
+        var hab_mov = document.getElementById(hab + "_on")
+        hab_mov.style.display = "block"
+        
+        // animação da habilidade
+        var posicao = -(window.innerWidth)
+        function move() {
+            if (posicao < window.innerWidth/100*8) {
+                posicao += 2
+                document.getElementById(hab_ant[0] + "_on").style.right = posicao + window.innerWidth + "px"
+                hab_mov.style.right = posicao + "px"
+                // trava
+                document.getElementById("html").disabled = true
+                document.getElementById("css").disabled = true
+                document.getElementById("javascript").disabled = true
+                document.getElementById("ingles").disabled = true
+                setTimeout(function() {move()}, 1)
+            }else {
+                if (hab_ant.length > 1) {
+                    document.getElementById(hab_ant[0] + "_on").style.display = "none"
+                    
+                }
+                // destrava
+                document.getElementById("html").disabled = false
+                document.getElementById("css").disabled = false
+                document.getElementById("javascript").disabled = false
+                document.getElementById("ingles").disabled = false
+            }
+        }
+        move()
+    }
 }
