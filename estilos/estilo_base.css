@@ -165,7 +165,7 @@ button {
     height: 900px;
 }
 #habilidades > h1 {
-    padding: 10px 0;
+    padding: 20px 0;
     font-size: 2em;
 }
 .hab {
@@ -189,7 +189,7 @@ button {
     background-color: var(--trancor);
     height: 250px;
     right: 8%;
-    bottom: 10%;
+    bottom: 15%;
     width: 80%;
     padding: 5px;
     border: 1px solid azure;
