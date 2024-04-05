@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: "KodeMono";
+    src: url(../fontes/KodeMono-VariableFont_wght.ttf);
+}
 
 :root {
     --cor: rgb(1, 0, 10);
@@ -16,12 +20,12 @@
     padding: 0;
     margin: 0;
 }
+h1, h2 {font-family: "KodeMono";}
 button {
     border: none;
     background-color: transparent;
     color: azure;
 }
-
 .divisao {
     height: 30px;
     background-image: linear-gradient(30deg, var(--cor2)30%,var(--cor3));
@@ -56,7 +60,7 @@ button {
 }
 #dentro_menu {
     display: none;
-    position: absolute;
+    position: fixed;
     background-image: linear-gradient(0deg, var(--cor),var(--cor1));
     text-align: center;
     height: 200px;
