@@ -180,6 +180,10 @@ button {
     border-radius: 10px;
 
 }
+.hab:hover {
+    padding: 5px;
+    background-color: var(--cor2);
+}
 .img_hab {
     width: 90%;
 }
@@ -219,9 +223,14 @@ button {
 .projeto {
     background-color: blueviolet;
     height: 130px;
-    margin: 40px 5px;
+    width: 90%;
+    margin: 40px auto;
     border: 1px solid rgb(151, 0, 139);
     border-radius: 10px;
+}
+.projeto:hover{
+    background-size: 95%;
+    background-color: var(--cor3);
 }
 .soon {
     background: var(--trancor2) url("../imagens/coming.png") no-repeat center;
@@ -240,6 +249,7 @@ button {
     position: absolute;
     color: azure;
     background-color: var(--trancor);
+    font-family: "KodeMono";
     font-size: 20px;
     left: 50%;
     top: 50%;
