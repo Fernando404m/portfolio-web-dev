@@ -80,3 +80,17 @@ function mostra(hab) {
         move()
     }
 }
+
+
+// mostrar contatos
+var terra = document.getElementById("terra")
+function contatos() {
+    if (terra.style.display == "block") {
+        terra.style.display = "none"
+    }else {
+        terra.style.display = "block"
+        window.scrollBy({
+            top: 500, behavior: "smooth"
+        })
+    }
+}
