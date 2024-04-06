@@ -47,6 +47,17 @@ function mostra(hab) {
         hab_ant.push(hab)
     }
     if (hab_ant[0] != hab_ant[1] || hab_ant.length == 1) {
+        document.getElementById("html").style.padding = "3px"
+        document.getElementById("css").style.padding = "3px"
+        document.getElementById("javascript").style.padding = "3px"
+        document.getElementById("ingles").style.padding = "3px"
+        document.getElementById("html").style.backgroundColor = "rgb(196, 196, 196)"
+        document.getElementById("css").style.backgroundColor = "rgb(196, 196, 196)"
+        document.getElementById("javascript").style.backgroundColor = "rgb(196, 196, 196)"
+        document.getElementById("ingles").style.backgroundColor = "rgb(196, 196, 196)"
+        document.getElementById(hab).style.padding = "5px"
+        document.getElementById(hab).style.backgroundColor = "rgb(104, 104, 104)"
+        
         var hab_mov = document.getElementById(hab + "_on")
         hab_mov.style.display = "block"
         
