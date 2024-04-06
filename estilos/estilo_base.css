@@ -196,3 +196,40 @@ button {
     border-radius: 10px;
     animation: normal 1s ease;
 }
+#selecione_hab {
+    position: absolute;
+    background-color: var(--trancor);
+    height: 250px;
+    right: 8%;
+    bottom: 15%;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid azure;
+    border-radius: 10px;
+    animation: normal 1s ease;
+}
+
+/* projetos */
+#projetos {
+    position: relative;
+    background-image: linear-gradient(180deg, var(--cor4),azure);
+    height: 900px;
+}
+.projeto {
+    background-color: blueviolet;
+    height: 130px;
+    margin: 40px 5px;
+    border: 1px solid rgb(151, 0, 139);
+    border-radius: 10px;
+}
+.soon {
+    background: var(--trancor2) url("../imagens/coming.png") no-repeat center;
+    background-size: 90%;
+
+}
+
+/* contatos */
+#contatos {
+    background-image: linear-gradient(180deg,green, 45%, rgb(160, 59, 28));
+    height: 60px;
+}

@@ -46,7 +46,7 @@ function mostra(hab) {
         hab_ant.shift()
         hab_ant.push(hab)
     }
-    if (hab_ant[0] != hab_ant[1] || hab_ant.length == 0) {
+    if (hab_ant[0] != hab_ant[1] || hab_ant.length == 1) {
         var hab_mov = document.getElementById(hab + "_on")
         hab_mov.style.display = "block"
         
@@ -55,6 +55,9 @@ function mostra(hab) {
         function move() {
             if (posicao < window.innerWidth/100*8) {
                 posicao += 2
+                if (hab_ant.length == 1) {
+                    document.getElementById("selecione_hab").style.right = posicao + window.innerWidth + "px"
+                }
                 document.getElementById(hab_ant[0] + "_on").style.right = posicao + window.innerWidth + "px"
                 hab_mov.style.right = posicao + "px"
                 // trava
