@@ -69,7 +69,6 @@ function mostra(hab) {
             }else {
                 if (hab_ant.length > 1) {
                     document.getElementById(hab_ant[0] + "_on").style.display = "none"
-                    
                 }
                 // destrava
                 document.getElementById("html").disabled = false
