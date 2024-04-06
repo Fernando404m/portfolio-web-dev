@@ -210,6 +210,7 @@ button {
 }
 
 /* projetos */
+
 #projetos {
     position: relative;
     background-image: linear-gradient(180deg, var(--cor4),azure);
@@ -229,6 +230,7 @@ button {
 }
 
 /* contatos */
+
 #grama {
     position: relative;
     background-image: linear-gradient(180deg,green, 30%, rgb(160, 59, 28));
