@@ -39,7 +39,7 @@ button {
     height: 60px;
     width: 100%;
     border-bottom: 1px solid azure;
-    z-index: 1;
+    z-index: 2;
 }
 #fmdev {
     position: absolute;
@@ -208,16 +208,18 @@ button {
     height: 900px;
 }
 .projeto {
+    position: relative;
     background-color: blueviolet;
     height: 130px;
     width: 90%;
     margin: 40px auto;
     border: 1px solid rgb(151, 0, 139);
     border-radius: 10px;
+    z-index: 1;
 }
 .projeto:hover{
     background-size: 95%;
-    background-color: var(--cor3);
+    background-color: rgba(122, 214, 214, 0.192);
 }
 .soon {
     background: var(--trancor2) url("../imagens/coming.png") no-repeat center;
@@ -227,9 +229,17 @@ button {
 
 /* contatos */
 
+#arvore {
+    position: absolute;
+    background: transparent url("../imagens/arvore.png") no-repeat center;
+    width: 228px;
+    height: 376px;
+    bottom: 0px;
+    right: -15px;
+}
 #grama {
     position: relative;
-    background-image: linear-gradient(180deg,green, 30%, rgb(160, 59, 28));
+    background-image: linear-gradient(180deg,rgb(6, 168, 6), 30%, rgb(117, 39, 15));
     height: 60px;
 }
 #contato {
@@ -248,7 +258,7 @@ button {
 #terra {
     display: none;
     position: relative;
-    background-image: linear-gradient(180deg, rgb(160, 59, 28), 25%, rgb(88, 32, 15), rgb(49, 18, 9));
+    background-image: linear-gradient(180deg, rgb(117, 39, 15), 25%, rgb(88, 32, 15), rgb(49, 18, 9));
     height: 500px;
 }
 #contatos *{
