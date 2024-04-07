@@ -59,6 +59,8 @@ button {
 }
 #dentro_menu {
     display: none;
+    flex-direction: column;
+    justify-content: space-around;
     position: fixed;
     background-image: linear-gradient(0deg, var(--cor),var(--cor1));
     font-size: 14px;
@@ -72,17 +74,13 @@ button {
     padding: 3px;
 }
 #dentro_menu > * {
-    padding: 2px 3px;
-    margin-top: 20px;
+    padding: 3px;
     border: 1px solid var(--trancor2);
     border-radius: 5px;
 }
 #dentro_menu > *:hover {
     background-image: linear-gradient(0deg, var(--trancor), var(--trancor1));
-    font-weight: bold;
-}
-#dentro_menu a {
-    color: azure;
+    border-width: 2px;
 }
 
 /* head */

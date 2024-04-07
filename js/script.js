@@ -1,13 +1,21 @@
 // barra de nav
 var dentro_menu = document.getElementById("dentro_menu")
 function menu() {
-    if (dentro_menu.style.display == "block") {
+    if (dentro_menu.style.display == "flex") {
         dentro_menu.style.display = "none"
     } else {
-        dentro_menu.style.display = "block"
+        dentro_menu.style.display = "flex"
     }
 }
 
+// ir ate um ponto pelo nav
+function ir_para(ponto) {
+    var ponto = document.getElementById(ponto)
+    window.scrollTo({
+        top: ponto.offsetTop,
+        behavior: "smooth"
+    })
+}
 
 // animação do sobre mim
 var div_mov = document.querySelector("#mov_about_me").style
