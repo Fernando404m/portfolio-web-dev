@@ -17,6 +17,7 @@ function ir_para(ponto) {
     })
 }
 
+
 // animação do sobre mim
 var div_mov = document.querySelector("#mov_about_me").style
 window.addEventListener("scroll",function() {
@@ -112,4 +113,26 @@ function contatos() {
             top: 500, behavior: "smooth"
         })
     }
+}
+
+
+// voltar para o inicio pela concha
+function do_zero() {
+    var concha = document.getElementById("concha").style
+    concha.position = "fixed"
+    aumento = 2
+    function move() {
+        aumento +=2
+        if (window.scrollY > 10) {
+            window.scrollTo({
+                top: -100, behavior: "smooth",
+            })
+            concha.bottom = aumento + "%"
+            setTimeout(function() {move()}, 90)
+        }else {
+            concha.position = "absolute"
+            concha.bottom = "50px"
+        }
+    }
+    move()
 }

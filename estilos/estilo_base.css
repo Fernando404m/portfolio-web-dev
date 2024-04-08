@@ -39,7 +39,7 @@ button {
     height: 60px;
     width: 100%;
     border-bottom: 1px solid azure;
-    z-index: 2;
+    z-index: 3;
 }
 #fmdev {
     position: absolute;
@@ -290,4 +290,21 @@ button {
     color: azure;
     top: 50%;
     left: 10%;
+}
+#concha {
+    position: absolute;
+    background: transparent url("../imagens/concha.png") no-repeat center;
+    background-size: 100%;
+    padding: 8px;
+    height: 100px;
+    width: 100px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    z-index: 2;
+}
+#concha:hover {
+    border: 2px solid rgb(196, 196, 196);
+    border-radius: 40px;
 }
