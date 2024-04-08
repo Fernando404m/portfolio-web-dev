@@ -10,6 +10,9 @@ function menu() {
 
 // ir ate um ponto pelo nav
 function ir_para(ponto) {
+    if (ponto == "grama") {
+        document.getElementById("terra").style.display = "block"
+    }
     var ponto = document.getElementById(ponto)
     window.scrollTo({
         top: ponto.offsetTop,
