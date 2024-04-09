@@ -308,3 +308,10 @@ button {
     border: 2px solid rgb(196, 196, 196);
     border-radius: 40px;
 }
+
+
+@media screen and (min-width: 480px) {
+    #concha {
+        background-color: red;
+    }
+}
