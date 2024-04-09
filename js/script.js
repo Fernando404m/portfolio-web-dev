@@ -124,14 +124,14 @@ function do_zero() {
     var concha = document.getElementById("concha").style
     concha.position = "fixed"
     aumento = 2
+    window.scrollBy({
+        top: -5000, behavior: "smooth"
+    })
     function move() {
-        aumento +=2
+        aumento +=20
         if (window.scrollY > 10) {
-            window.scrollBy({
-                top: -200, behavior: "smooth",
-            })
             concha.bottom = aumento + "%"
-            setTimeout(function() {move()}, 100)
+            setTimeout(function() {move()}, 150)
         }else {
             concha.position = "absolute"
             concha.bottom = "50px"
