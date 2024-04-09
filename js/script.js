@@ -127,11 +127,11 @@ function do_zero() {
     function move() {
         aumento +=2
         if (window.scrollY > 10) {
-            window.scrollTo({
-                top: -100, behavior: "smooth",
+            window.scrollBy({
+                top: -200, behavior: "smooth",
             })
             concha.bottom = aumento + "%"
-            setTimeout(function() {move()}, 90)
+            setTimeout(function() {move()}, 100)
         }else {
             concha.position = "absolute"
             concha.bottom = "50px"
