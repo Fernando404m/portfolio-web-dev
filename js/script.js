@@ -27,17 +27,17 @@ window.addEventListener("scroll",function() {
     var limite = this.document.getElementById("about_me").getBoundingClientRect().top
 
     // quando chegar ate o "limite" começar a se mover
-    if (window.scrollY >= limite && window.scrollY < limite + 275) {
+    if (window.scrollY >= limite && window.scrollY < (window.scrollY + limite) - 144) {
         div_mov.top = "30%"
         div_mov.position = "fixed"
         div_mov.display = "block"
         div_mov.right = (window.scrollY - limite) * (window.innerWidth/310) -  (window.innerWidth/100*80) + "px"
-    }else if (window.scrollY >= limite + 275 && window.scrollY < limite + 1140) {
+    }else if (window.scrollY >= (window.scrollY + limite) - 144 && window.scrollY < (window.scrollY + limite) + 286) {
         div_mov.top = "30%"
         div_mov.position = "fixed"
         div_mov.display = "block"
         div_mov.right = "8%"
-    }else if (window.scrollY >= limite + 1140) {
+    }else if (window.scrollY >= (window.scrollY + limite) + 286) {
         var acrescimo = window.innerHeight - 568
         div_mov.top = 451 + acrescimo/3 + "px"
         div_mov.position = "absolute"
