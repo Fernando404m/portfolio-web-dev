@@ -311,9 +311,6 @@ button {
 
 
 @media screen and (orientation: landscape) {
-    #recipiente {
-        bottom: 30%;
-    }
     #nav_bar {
         background-image: none;
         border: none;
@@ -335,6 +332,9 @@ button {
         border-right: none;
         border-radius: 0 0 0 10px;
         background-image: linear-gradient(0deg, var(--cor),var(--cor1));
+    }
+    #recipiente {
+        bottom: 22%;
     }
     .hab {
         width: 50vh;
