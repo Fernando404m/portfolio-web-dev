@@ -138,3 +138,16 @@ function do_zero() {
     }
     move()
 }
+
+
+// para desktop
+
+// mudar entre com ou sem menu dependendo da largura
+window.addEventListener("resize", function() {
+    var menu = document.getElementById("dentro_menu")
+    if (window.innerWidth <= 1260) {
+        menu.style.display = "none"
+    }else {
+        menu.style.display = "flex"
+    }
+})
