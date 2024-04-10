@@ -107,8 +107,11 @@ button {
     margin: auto;
     margin-top: 20px;
 }
+
+/* about me */
+
 #ceu {
-    background-image: linear-gradient(155deg, var(--cor), var(--cor1) 52%);
+    background-image: linear-gradient(170deg, var(--cor), var(--cor1) 52%);
     height: 200px;
 }
 #estrela {
@@ -116,9 +119,6 @@ button {
     height: 90%;
     width: 100%;
 }
-
-/* about me */
-
 #about_me {
     position: relative;
     background-image: linear-gradient(0deg, var(--cor), var(--cor1));
