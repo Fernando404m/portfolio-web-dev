@@ -309,6 +309,7 @@ button {
     border-radius: 40px;
 }
 
+
 @media screen and (orientation: landscape) {
     #recipiente {
         bottom: 30%;
@@ -336,6 +337,9 @@ button {
         background-image: linear-gradient(0deg, var(--cor),var(--cor1));
     }
     .hab {
-        width: 30vw;
+        width: 50vh;
+    }
+    .display_hab, #selecione_hab {
+        bottom: 8%;
     }
 }
