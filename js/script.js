@@ -38,8 +38,7 @@ window.addEventListener("scroll",function() {
         div_mov.display = "block"
         div_mov.right = "8%"
     }else if (window.scrollY >= (window.scrollY + limite) + 286) {
-        var acrescimo = window.innerHeight - 568
-        div_mov.top = 451 + acrescimo/3 + "px"
+        div_mov.top = (window.scrollY + document.getElementById("about_me").getBoundingClientRect().bottom) - (window.scrollY + limite) - 448 + "px"
         div_mov.position = "absolute"
         div_mov.display = "block"
         div_mov.right = "8%"
