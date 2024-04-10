@@ -128,7 +128,7 @@ function do_zero() {
         top: -5000, behavior: "smooth"
     })
     function move() {
-        aumento += 20
+        aumento += 22
         if (window.scrollY > 10) {
             concha.bottom = aumento + "%"
             setTimeout(function() {move()}, 150)
