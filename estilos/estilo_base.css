@@ -136,7 +136,7 @@ button {
 }
 #recipiente {
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     height: 30%;
     width: 90%;
     margin: 0 4% 0 6%;
@@ -334,7 +334,7 @@ button {
         background-image: linear-gradient(0deg, var(--cor),var(--cor1));
     }
     #recipiente {
-        bottom: 22%;
+        bottom: 25%;
     }
     .hab {
         width: 50vh;
