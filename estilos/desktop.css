@@ -47,9 +47,14 @@
 #start {
     height: 700px;
 }
-
+#mov_about_me {
+    width: 500px;
+    font-size: 20px;
+}
 #recipiente {
+    width: 540px;
     bottom: 25%;
+    right: 8%;
 }
 .hab {
     width: 50vh;
