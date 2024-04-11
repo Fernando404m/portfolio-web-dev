@@ -27,23 +27,44 @@ window.addEventListener("scroll",function() {
     var limite = this.document.getElementById("about_me").getBoundingClientRect().top
 
     // quando chegar ate o "limite" começar a se mover
-    if (window.scrollY >= limite && window.scrollY < (window.scrollY + limite) - 144) {
-        div_mov.top = "111px"
-        div_mov.position = "fixed"
-        div_mov.display = "block"
-        div_mov.right = (window.scrollY - limite) * (window.innerWidth/310) -  (window.innerWidth/100*80) + "px"
-    }else if (window.scrollY >= (window.scrollY + limite) - 144 && window.scrollY < (window.scrollY + limite) + 306) {
-        div_mov.top = "111px"
-        div_mov.position = "fixed"
-        div_mov.display = "block"
-        div_mov.right = "8%"
-    }else if (window.scrollY >= (window.scrollY + limite) + 306) {
-        div_mov.top = 412 + "px"
-        div_mov.position = "absolute"
-        div_mov.display = "block"
-        div_mov.right = "8%"
-    } else {
-        div_mov.display = "none"
+    if (window.innerWidth <= 1260) {
+        if (window.scrollY >= limite && window.scrollY < (window.scrollY + limite) - 144) {
+            div_mov.top = "111px"
+            div_mov.position = "fixed"
+            div_mov.display = "block"
+            div_mov.right = (window.scrollY - limite) * (window.innerWidth/310) -  (window.innerWidth/100*80) + "px"
+        }else if (window.scrollY >= (window.scrollY + limite) - 144 && window.scrollY < (window.scrollY + limite) + 306) {
+            div_mov.top = "111px"
+            div_mov.position = "fixed"
+            div_mov.display = "block"
+            div_mov.right = "8%"
+        }else if (window.scrollY >= (window.scrollY + limite) + 306) {
+            div_mov.top = 412 + "px"
+            div_mov.position = "absolute"
+            div_mov.display = "block"
+            div_mov.right = "8%"
+        } else {
+            div_mov.display = "none"
+        }
+    }else {
+        if (window.scrollY >= limite && window.scrollY < (window.scrollY + limite) - 144) {
+            div_mov.top = "111px"
+            div_mov.position = "fixed"
+            div_mov.display = "block"
+            div_mov.right = (window.scrollY - limite) * (window.innerWidth/310) -  (window.innerWidth/100*80) + "px"
+        }else if (window.scrollY >= (window.scrollY + limite) - 144 && window.scrollY < (window.scrollY + limite) + 306) {
+            div_mov.top = "111px"
+            div_mov.position = "fixed"
+            div_mov.display = "block"
+            div_mov.right = "8%"
+        }else if (window.scrollY >= (window.scrollY + limite) + 306) {
+            div_mov.top = 412 + "px"
+            div_mov.position = "absolute"
+            div_mov.display = "block"
+            div_mov.right = "8%"
+        } else {
+            div_mov.display = "none"
+        }
     }
 })
 
