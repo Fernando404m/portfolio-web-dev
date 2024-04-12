@@ -51,13 +51,13 @@ window.addEventListener("scroll",function() {
             div_mov.top = "111px"
             div_mov.position = "fixed"
             div_mov.display = "block"
-            div_mov.right = (window.scrollY - limite) * (window.innerWidth/310) -  (window.innerWidth/100*80) + "px"
+            div_mov.right = (window.scrollY - (window.scrollY + limite) + window.innerWidth/100*15) * 2 + "px"
         }else if (window.scrollY >= (window.scrollY + limite) - 144 && window.scrollY < (window.scrollY + limite) + 306) {
             div_mov.top = "111px"
             div_mov.position = "fixed"
             div_mov.display = "block"
             div_mov.right = "8%"
-        }else if (window.scrollY >= (window.scrollY + limite) + 306) {
+        }else if (window.scrollY >= (window.scrollY + limite) + 305) {
             div_mov.top = 412 + "px"
             div_mov.position = "absolute"
             div_mov.display = "block"
@@ -99,9 +99,9 @@ function mostra(hab) {
             if (posicao < window.innerWidth/100*8) {
                 posicao += 2
                 if (hab_ant.length == 1) {
-                    document.getElementById("selecione_hab").style.right = posicao + window.innerWidth + "px"
+                    document.getElementById("selecione_hab").style.right = posicao + window.innerWidth/100*108 + "px"
                 }
-                document.getElementById(hab_ant[0] + "_on").style.right = posicao + window.innerWidth + "px"
+                document.getElementById(hab_ant[0] + "_on").style.right = posicao + window.innerWidth/100*108 + "px"
                 hab_mov.style.right = posicao + "px"
                 // trava
                 document.getElementById("html").disabled = true

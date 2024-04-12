@@ -12,6 +12,7 @@
 <body>
     <nav id="nav_bar"> <!-- barra de navegação -->
         <div id="fmdev">- F.M. DEV -</div>
+        <div id="separador"></div>
         <button id="menu" class="material-symbols-outlined" onclick="menu()">menu</button>
         <div id="dentro_menu">
             <button onclick="ir_para('start')">Início</button>
@@ -22,8 +23,11 @@
         </div>
     </nav>
     <header id="start">
-        <h1 id="nome">Fernando Marques<br>Desenvolvedor web</h1>
-        <img id="foto" src="imagens/fernando.png" alt="minha foto"> <!-- minha foto ou algo do tipo -->
+        <div id="perfil">
+            <h1 id="nome">Fernando Marques<br>Desenvolvedor web</h1>
+            <img id="foto" src="imagens/fernando.png" alt="minha foto">
+        </div> <!-- minha foto ou algo do tipo -->
+        <div id="divisoria_perfil"></div>
     </header>
     <div id="ceu"><div class="estrela"></div></div>
     <main>
@@ -77,11 +81,12 @@
             </div>
         </section> <!-- display das habilidades -->
         <section id="projetos">
-           <div class="projeto soon"></div> 
-           <div class="projeto soon"></div> 
-           <div class="projeto soon"></div> 
-           <div class="projeto soon"></div> 
-           <div id="arvore"></div>
+            <h1>Projetos</h1>
+            <div class="projeto soon"></div> 
+            <div class="projeto soon"></div> 
+            <div class="projeto soon"></div> 
+            <div class="projeto soon"></div> 
+            <div id="arvore"></div>
         </section>
     </main>
     <footer id="grama">
