@@ -319,6 +319,18 @@ button {
     border: 2px solid rgb(196, 196, 196);
     border-radius: 40px;
 }
+.rodar {
+    animation: animaçao_rodar 2s linear infinite;
+}
+@keyframes animaçao_rodar {
+    from {
+        transform: rotate(0deg);
+        translate: -50%;
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 @media screen and (orientation: landscape) {

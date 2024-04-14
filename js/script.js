@@ -15,7 +15,7 @@ function ir_para(ponto) {
     }
     var ponto = document.getElementById(ponto)
     window.scrollTo({
-        top: ponto.offsetTop,
+        top: ponto.offsetTop - 50,
         behavior: "smooth"
     })
 }
@@ -141,8 +141,9 @@ function contatos() {
 
 // voltar para o inicio pela concha
 function do_zero() {
-    var concha = document.getElementById("concha").style
-    concha.position = "fixed"
+    var concha = document.getElementById("concha")
+    concha.style.position = "fixed"
+    concha.classList.add("rodar")
     aumento = 2
     window.scrollBy({
         top: -5000, behavior: "smooth"
@@ -150,11 +151,12 @@ function do_zero() {
     function move() {
         aumento += 22
         if (window.scrollY > 10) {
-            concha.bottom = aumento + "%"
+            concha.style.bottom = aumento + "%"
             setTimeout(function() {move()}, 150)
         }else {
-            concha.position = "absolute"
-            concha.bottom = "50px"
+            concha.style.position = "absolute"
+            concha.style.bottom = "50px"
+            concha.classList.remove("rodar")
         }
     }
     move()
@@ -162,6 +164,7 @@ function do_zero() {
 
 
 // para desktop
+
 
 // mudar entre com ou sem menu dependendo da largura
 window.addEventListener("resize", function() {
@@ -173,6 +176,8 @@ window.addEventListener("resize", function() {
     }
 })
 
+
+// animação do perfil
 var perfil_html = document.getElementById("perfil_html")
 var perfil_css = document.getElementById("perfil_css")
 var perfil_js = document.getElementById("perfil_js")
@@ -229,3 +234,23 @@ function animação_perfil() {
     }
 }
 animação_perfil()
+
+
+// animaçao das estrelas do background do about me
+var posi_bg = 0
+var bgs = document.querySelectorAll(".estrela")
+function estrelas() {
+    if (window.scrollY > 50 && window.scrollY < 1800) {
+        if (posi_bg < 1000) {
+        bgs.forEach(function(bg) {bg.style.backgroundPosition = `${posi_bg}px ${posi_bg}px`})
+        posi_bg += 1
+        setTimeout(function() {estrelas()}, 200)
+        }else {
+        posi_bg = 0
+        setTimeout(function() {estrelas()}, 200)
+        }
+    }else {
+        setTimeout(function() {estrelas()}, 200)
+    }
+}
+estrelas()
