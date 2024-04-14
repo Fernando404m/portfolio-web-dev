@@ -172,3 +172,60 @@ window.addEventListener("resize", function() {
         menu.style.display = "flex"
     }
 })
+
+var perfil_html = document.getElementById("perfil_html")
+var perfil_css = document.getElementById("perfil_css")
+var perfil_js = document.getElementById("perfil_js")
+var barra_divisao = document.getElementById("divisoria_perfil")
+var posi_animaçao = 50
+
+function animação_perfil() {
+    if (posi_animaçao <= 300) {
+        
+        if (posi_animaçao >= 0 && posi_animaçao <= 100) {
+            perfil_html.style.top = posi_animaçao + "px"
+            perfil_css.style.top = 100 + posi_animaçao + "px"
+            perfil_js.style.top = 200 + posi_animaçao +"px"
+            perfil_js.style.zIndex = 1
+            perfil_css.style.zIndex = 2
+            perfil_html.style.zIndex = 0
+        }else if (posi_animaçao > 100 && posi_animaçao <= 200) {
+            perfil_html.style.top = posi_animaçao + "px"
+            perfil_css.style.top = 100 + posi_animaçao + "px"
+            perfil_js.style.top = -100 + posi_animaçao +"px"
+            perfil_js.style.zIndex = 0
+            perfil_css.style.zIndex = 1
+            perfil_html.style.zIndex = 2
+        }else if (posi_animaçao > 200) {
+            perfil_html.style.top = posi_animaçao + "px"
+            perfil_css.style.top = posi_animaçao - 200 + "px"
+            perfil_js.style.top = posi_animaçao - 100 +"px"
+            perfil_js.style.zIndex = 2
+            perfil_css.style.zIndex = 0
+            perfil_html.style.zIndex = 1
+        }
+
+        if (posi_animaçao > 90 && posi_animaçao < 210) {
+            perfil_js.style.opacity = 0
+            perfil_css.style.opacity = 0
+            perfil_html.style.opacity = 1
+            barra_divisao.style.backgroundImage = "linear-gradient(90deg, rgba(34, 34, 34, 0.575), rgba(85, 44, 44, 0.356))"
+        }else if (posi_animaçao > 190 || posi_animaçao < 10) {
+            perfil_js.style.opacity = 1
+            perfil_css.style.opacity = 0
+            perfil_html.style.opacity = 0
+            barra_divisao.style.backgroundImage = "linear-gradient(90deg, rgba(34, 34, 34, 0.575), rgba(85, 82, 44, 0.356))"
+        }else if (posi_animaçao > 290 || posi_animaçao < 110){
+            perfil_js.style.opacity = 0
+            perfil_css.style.opacity = 1
+            perfil_html.style.opacity = 0
+            barra_divisao.style.backgroundImage = "linear-gradient(90deg, rgba(34, 34, 34, 0.575), rgba(44, 66, 85, 0.356))"
+        }
+        posi_animaçao += 5
+        setTimeout(function() {animação_perfil()}, 150)
+    }else {
+        posi_animaçao = 0
+        setTimeout(function() {animação_perfil()}, 150)
+    }
+}
+animação_perfil()

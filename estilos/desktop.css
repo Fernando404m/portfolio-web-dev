@@ -55,7 +55,7 @@
 /* header */
 
 #start {
-    height: 700px;
+    height: 600px;
 }
 #perfil {
     position: relative;
@@ -71,7 +71,7 @@
 }
 #foto {
     position: absolute;
-    top: 180px;
+    top: 170px;
     left: 50%;
     transform: translate(-50%);
     width: 320px;
@@ -85,6 +85,32 @@
     width: 100px;
     background-image: linear-gradient(90deg, rgba(48, 48, 48, 0.575), rgba(100, 100, 100, 0.356));
     transform: skew(-15deg);
+}
+#animaçao_perfil {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    height: 500px;
+    width: 400px;
+    overflow-y: hidden;
+}
+#animaçao_perfil > div *{
+    position: absolute;
+    background-size: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 200px;
+    transition: 0.4s;
+}
+#perfil_html {
+    background: transparent url(../imagens/html.png) no-repeat center;
+}
+#perfil_css {
+    background: transparent url(../imagens/css.png) no-repeat center;
+}
+#perfil_js {
+    background: transparent url(../imagens/javascript.png) no-repeat center;
 }
 #about_me {
     height: 1000px;
