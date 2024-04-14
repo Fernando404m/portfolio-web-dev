@@ -302,6 +302,22 @@ button {
     top: 50%;
     left: 10%;
 }
+#pngegg {
+    position: absolute;
+    font-size: 10px;
+    bottom: 1%;
+    left: 5%;
+    color: #000;
+}
+#pngegg > span {
+    display: unset;
+    background-color: unset;
+    margin-top: unset;
+    padding: unset;
+    border: unset;
+    border-radius: unset;
+    color: #000;
+}
 #concha {
     position: absolute;
     background: transparent url("../imagens/concha.png") no-repeat center;
@@ -355,6 +371,9 @@ button {
         border-right: none;
         border-radius: 0 0 0 10px;
         background-image: linear-gradient(0deg, var(--cor),var(--cor1));
+    }
+    #mov_about_me {
+        transform: translateY(-28%);
     }
     #recipiente {
         bottom: 25%;
