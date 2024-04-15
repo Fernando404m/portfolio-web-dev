@@ -183,11 +183,12 @@ var perfil_css = document.getElementById("perfil_css")
 var perfil_js = document.getElementById("perfil_js")
 var barra_divisao = document.getElementById("divisoria_perfil")
 var posi_animaçao = 50
+var ativado = false
 
 function animação_perfil() {
     if (window.innerWidth >= 1260) {
+        ativado = true
         if (posi_animaçao <= 300) {
-            
             if (posi_animaçao >= 0 && posi_animaçao <= 100) {
                 perfil_html.style.top = posi_animaçao + "px"
                 perfil_css.style.top = 100 + posi_animaçao + "px"
@@ -233,6 +234,8 @@ function animação_perfil() {
             posi_animaçao = 0
             setTimeout(function() {animação_perfil()}, 150)
         }
+    }else {
+        ativado = false
     }
 }
 
@@ -240,8 +243,10 @@ function animação_perfil() {
 // animaçao das estrelas do background do about me
 var posi_bg = 0
 var bgs = document.querySelectorAll(".estrela")
+var ativado2 = false
 function estrelas() {
     if (window.innerWidth >= 1260) {
+        ativado2 = true
         if (window.scrollY > 50 && window.scrollY < 1800) {
             if (posi_bg < 1000) {
             bgs.forEach(function(bg) {bg.style.backgroundPosition = `${posi_bg}px ${posi_bg}px`})
@@ -254,6 +259,8 @@ function estrelas() {
         }else {
             setTimeout(function() {estrelas()}, 200)
         }
+    }else {
+        ativado2 = false
     }
 }
 
@@ -262,4 +269,7 @@ if (window.innerWidth >= 1260) {
     animação_perfil()
     estrelas()
 }
-window.addEventListener("resize",function() {animação_perfil(); estrelas()})
+window.addEventListener("resize",function() {
+    if (ativado == false) {animação_perfil()}
+    if (ativado2 == false) {estrelas()}
+})
