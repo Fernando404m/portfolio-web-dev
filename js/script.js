@@ -27,7 +27,7 @@ window.addEventListener("scroll",function() {
     var limite = this.document.getElementById("about_me").getBoundingClientRect().top
 
     // quando chegar ate o "limite" começar a se mover
-    if (window.innerWidth <= 1260) {
+    if (window.innerWidth <= 720) {
         if (window.scrollY >= limite && window.scrollY < (window.scrollY + limite) - 144) {
             div_mov.top = "111px"
             div_mov.position = "fixed"
@@ -169,7 +169,7 @@ function do_zero() {
 // mudar entre com ou sem menu dependendo da largura
 window.addEventListener("resize", function() {
     var menu = document.getElementById("dentro_menu")
-    if (window.innerWidth <= 1260) {
+    if (window.innerWidth <= 720) {
         menu.style.display = "none"
     }else {
         menu.style.display = "flex"
