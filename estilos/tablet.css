@@ -165,3 +165,63 @@
     right: 3%;
     color: #000;
 }
+
+@media screen and (orientation: portrait) {
+    #fmdev {
+        left: 10px;
+        width: 160px;
+        padding: 0;
+        font-size: 22px;
+    }
+    #separador {
+        left: 10px;
+        width: 160px;
+    }
+    #dentro_menu * {
+        margin: 5px;
+        font-size: 20px;
+    }
+    #perfil {
+        height: 60%;
+        width: 100%;
+    }
+    #nome {
+        top: 130px;
+        left: 20px;
+        font-size: 40px;
+        padding: 5px;
+        border: 1px solid var(--cor1);
+        border-radius: 10px;
+    }
+    #foto {
+        top: 20px;
+        left: unset;
+        right: 40px;
+        width: 210px;
+        height: 280px;
+        border: 1px solid var(--cor1);
+        border-radius: 20px;
+        transform: translate(0);
+    }
+    #divisoria_perfil {
+        display: none;
+    }
+    #animaçao_perfil {
+        position: absolute;
+        top: unset;
+        bottom: 0;
+        right: 0;
+        height: 40%;
+        width: 100%;
+    }
+    .hab {
+        width: 180px;
+    }
+    .display_hab, #selecione_hab {
+        bottom: 8%;
+    }
+    .projeto {
+        width: 300px;
+    }
+    
+}
